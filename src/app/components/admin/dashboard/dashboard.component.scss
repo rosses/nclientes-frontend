@@ -2,7 +2,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   &.top-group {
-    height: 20vh;
+    min-height: 170px;
     h5 {
       color: #4F4F4F;
     }
@@ -25,4 +25,8 @@
     font-size: 1.2em;
     margin-bottom: .5em;
   }
+}
+a {
+  color:#0076bd;
+  text-decoration: none;
 }

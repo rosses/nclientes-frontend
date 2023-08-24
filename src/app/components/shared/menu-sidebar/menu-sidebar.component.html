@@ -14,7 +14,7 @@
           class="btn btn-link"
           [routerLink]="[ item.url ]"
           routerLinkActive="active">
-            <span class="icon"><img src="{{'assets/svg/' + item.icon + '.svg'}}" alt="icono"></span>
+            <span class="icon"><img src="{{'assets/svg/' + item.icon + ''}}" alt="icono"></span>
             <span *ngIf="open">{{ item.name }}</span>
         </button>
       </li>

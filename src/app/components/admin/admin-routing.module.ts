@@ -8,6 +8,8 @@ import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { BillingComponent } from './billing/billing.component';
 import { SettingComponent } from './setting/setting.component';
 import { SuperintendenciaComponent } from './superintendencia/superintendencia.component';
+import { SendComponent } from './send/send.component';
+import { AddressesComponent } from './addresses/addresses.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'send',
+        component: SendComponent
       },
       {
         path: 'notifications',
@@ -33,6 +39,10 @@ const routes: Routes = [
       {
         path: 'billing',
         component: BillingComponent
+      },
+      {
+        path: 'addresses',
+        component: AddressesComponent
       },
       {
         path: 'setting',

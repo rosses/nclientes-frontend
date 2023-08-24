@@ -23,10 +23,12 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
 
     this.loading = true;
-    this.api.getSuperadminDashboard().subscribe((data:any) => {
-      this.stats = data;
+    //this.api.getSuperadminDashboard().subscribe((data:any) => {
+    //  this.stats = data;
+    setTimeout(() => {
       this.loading = false;
-    });
+    },300);
+    //});
   }
 
 }

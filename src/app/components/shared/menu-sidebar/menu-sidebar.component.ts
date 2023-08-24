@@ -14,8 +14,8 @@ export class MenuSidebarComponent implements OnInit {
 
   adminMenu = [
     {
-      icon: "icon-dashboard",
-      name: "Dashboard",
+      icon: "icon-dashboard.svg",
+      name: "Mi escritorio",
       url: "dashboard"
     },
 /*     {
@@ -23,36 +23,38 @@ export class MenuSidebarComponent implements OnInit {
       name: "Notificaciones",
       url: "notifications"
     }, */
+    /*
     {
       icon: "icon-prestador-de-salud",
       name: "Prestadores de salud",
       url: "health-provider"
     },
+    */
     {
-      icon: "icon-users",
-      name: "Administradores",
-      url: "admin-users"
+      icon: "send.png",
+      name: "Enviar",
+      url: "send"
     },
-/*     {
-      icon: "icon-doc",
+     {
+      icon: "icon-doc.svg",
       name: "Facturación",
       url: "billing"
-    }, */
+    }, 
     {
-      icon: "icon-doc",
-      name: "Reg. Superintendencia",
-      url: "superintendencia"
+      icon: "warehouse.png",
+      name: "Mis direcciones",
+      url: "addresses"
     },
     {
-      icon: "icon-settings",
-      name: "Configuración",
+      icon: "icon-settings.svg",
+      name: "Mis datos",
       url: "setting"
-    },/*
+    },
     {
-      icon: "icon-circle-x",
+      icon: "icon-circle-x.svg",
       name: "Cerrar Sesión",
       url: "logout"
-    },*/
+    },
   ];
 
   constructor(private api: ApiService) { }

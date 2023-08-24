@@ -7,22 +7,49 @@
 <div class="page-wrapper animate__animated animate__fadeIn">
 
   <div class="container">
+    <div class="row mt-2">
+      <div class="col">
+        <h3>Tús envios</h3>
+      </div>
+    </div>
     <div class="row mb-4">
       <div class="col">
         <div class="box top-group">
-          <h5 class="fw-normal">Prestadores:</h5>
-          <h5 class="fw-normal mt-5 w-100 text-end">{{stats.customersList}}</h5>
+          <h5 class="fw-normal">Todos tus envíos:</h5>
+          <h3 class="fw-normal mt-4 w-100 text-end">0</h3>
         </div>
       </div>
 
       <div class="col">
+        <div class="box top-group">
+          <h5 class="fw-normal">Entregados:</h5>
+          <h3 class="fw-normal mt-4 w-100 text-end">0</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box top-group">
+          <h5 class="fw-normal">En tránsito:</h5>
+          <h3 class="fw-normal mt-4 w-100 text-end">0</h3>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="box top-group">
+          <h5 class="fw-normal">No entregados:</h5>
+          <h3 class="fw-normal mt-4 w-100 text-end">0</h3>
+        </div>
+      </div>
+
+      <!-- <div class="col">
         <div class="box top-group active">
           <h5 class="fw-normal">Turnos actuales</h5>
           <p>Periodo: {{stats.periodCurrent}}</p>
           <p class="mb-0" style="font-size: 1.2em;">{{stats.shiftsCurrent}} Turnos</p>
         </div>
-      </div>
+      </div> -->
 
+      <!--
       <div class="col">
         <div class="box top-group">
           <h5 class="fw-normal">Turnos anteriores</h5>
@@ -37,48 +64,49 @@
           </table>
         </div>
       </div>
+      -->
     </div>
-    <div class="row align-items-stretch" style="height: 350px;">
+    <div class="row mt-5">
       <div class="col">
-        <div class="box h-100">
-          <p>Usuarios por Profesión</p>
-
-          <div class="tab-list">
-           <div class="tab bg-primary text-white" *ngFor="let p of stats.usersByJobs">
-              <div class="row h-100 align-items-center">
-                <div class="col">{{p.name}}</div>
-                <div class="col-4">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/svg/icon-user.svg" class="me-3" alt="icono usuario">
-                    {{p.qty}}
-                  </div>
-                </div>
-              </div>
+        <h3>Retiros</h3>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="box top-group">
+              <h5 class="fw-normal">Pendientes:</h5>
+              <h3 class="fw-normal mt-4 w-100 text-end">0</h3>
             </div>
           </div>
-
+    
+          <div class="col">
+            <div class="box top-group">
+              <h5 class="fw-normal">Por despachar:</h5>
+              <h3 class="fw-normal mt-4 w-100 text-end">0</h3>
+            </div>
+          </div>
+    
         </div>
       </div>
       <div class="col">
-        <div class="box h-100 active" hidden>
-          <p>Usuarios por ubicación</p>
-
-          <div class="tab-list">
-            <div class="tab bg-white text-primary" *ngFor="let l of stats.usersByLocation">
-              <div class="row h-100 align-items-center">
-                <div class="col">{{l.name}}</div>
-                <div class="col-4">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/svg/icon-pin.svg" class="me-3" alt="icono usuario">
-                    {{l.qty}}
-                  </div>
-                </div>
-              </div>
-            </div> 
+        <h3>Finanzas</h3>
+        <div class="row mb-4">
+          <div class="col">
+            <div class="box top-group">
+              <h5 class="fw-normal">Crédito disponible:</h5>
+              <h3 class="fw-normal mt-4 w-100 text-end">$ 10.000.000</h3>
+            </div>
           </div>
-        </div>
+    
+          <div class="col">
+            <div class="box top-group">
+              <h5 class="fw-normal">Monto por pagar:</h5>
+              <h3 class="fw-normal mt-4 w-100 text-end">$ 0</h3>
+              <p class="text-end">
+                <a href="#">Revisar</a>
+              </p>
+            </div>
+          </div>
       </div>
-    </div>
+    </div> 
   </div>
 
 </div>

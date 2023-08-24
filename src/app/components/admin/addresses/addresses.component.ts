@@ -3,11 +3,11 @@ import { faAngleUp, faAngleDown, faCircleDot, faXmark } from '@fortawesome/free-
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
-  selector: 'app-billing',
-  templateUrl: './billing.component.html',
-  styleUrls: ['./billing.component.scss']
+  selector: 'app-addresses',
+  templateUrl: './addresses.component.html',
+  styleUrls: ['./addresses.component.scss']
 })
-export class BillingComponent implements OnInit {
+export class AddressesComponent implements OnInit {
 
   showModalBill: boolean = false;
 

@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.loading = true; 
+    /*
     this.api.login(this.userData).subscribe(async (data:any) => { 
       await this.api.setProfile(data);
       await this.api.setToken(data.token);
@@ -38,6 +39,20 @@ export class LoginComponent implements OnInit {
       this.api.toastError(err.error.error);
       this.loading = false;
     });
+    */
+    setTimeout(() => {
+    if (this.userData.email == 'carlos@exodochile.cl' && this.userData.password=='EspinaceCarlos') {
+      this.api.setProfile({});
+      this.api.setToken("123456789");
+      setTimeout(() => {
+        this.router.navigateByUrl('/admin/dashboard');
+        this.loading = false;
+      },500);
+    } else {
+      this.api.toastError('Acceso denegado');
+      this.loading = false;
+    }
+    },1000);
   }
 
   enterBtn(event: KeyboardEvent) {

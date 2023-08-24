@@ -1,0 +1,101 @@
+<div class="page-wrapper animate__animated animate__fadeIn">
+
+  <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <h4 class="mb-5">Cotizador de envíos individuales</h4>
+        </div>
+        <div class="col text-end">
+          <a class="btn btn-primary">Utilizar el asistente de envío masivo</a>
+        </div>
+      </div>
+      
+      <div class="row mb-4 mt-2">
+          <div class="col-6">
+              <h5 class="mb-3"><span class="pelota">1</span> Origen</h5>
+              <div class="row">
+                  <div class="col-6">
+                      <select class="form-select" name="sel1" id="sel1" >
+                          <option value="">- Región -</option>
+                      </select>
+                  </div>
+                  <div class="col-6">
+                      <select class="form-select" name="sel1" id="sel1" >
+                          <option value="">- Comuna -</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6">
+              <h5 class="mb-3"><span class="pelota">2</span> Destino</h5>
+              <div class="row">
+                  <div class="col-6">
+                      <select class="form-select" name="sel1" id="sel1" >
+                          <option value="">- Región -</option>
+                      </select>
+                  </div>
+                  <div class="col-6">
+                      <select class="form-select" name="sel1" id="sel1" >
+                          <option value="">- Comuna -</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <h5 class="mb-2"><span class="pelota">3</span> Tamaño del paquete</h5>
+      <small>Indique tamaño en centimetros</small>
+      <div class="row mt-3">
+          <div class="col-6">
+              <div class="row">
+                  <div class="col-3">
+                      <h6>Largo (cm)</h6> 
+                      <input type="text" placeholder="0" class="form-control" name="lar" id="lar" />
+                  </div>
+                  <div class="col-3">
+                      <h6>Ancho (cm)</h6>
+                      <input type="text" placeholder="0" class="form-control" name="anc" id="anc" /> 
+                  </div>
+                  <div class="col-3">
+                      <h6>Alto (cm)</h6> 
+                      <input type="text" placeholder="0" class="form-control" name="alt" id="alt" />
+                  </div>
+                  <div class="col-3">
+                      <h6>Peso (kg)</h6> 
+                      <input type="text" placeholder="0" class="form-control" name="pkg" id="pkg" />
+                  </div>
+              </div>
+          </div>
+          <div class="col-6 text-center" style="background-color:#eeeeee;">
+              <img src="/assets/images/cajita.jpeg" class="pt-4 pb-4" />
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="col-6">
+              <h5 class="mb-2"><span class="pelota">4</span> Cotización</h5> 
+              <br />
+              
+              
+              <div class="result-cotizador">
+                  
+                  <div class="row">
+                      <div class="col-6"><b>Valor servicio:</b></div>
+                      <div class="col-6"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-6"><b>Tipo servicio:</b></div>
+                      <div class="col-6"></div>
+                  </div>
+                  
+              <!-- <i class="fa fa-spin fa-spinner fa-2x"></i> calculando... -->
+              </div>
+              
+          </div>
+          <div class="col-6">
+              <button class="btn btn-success" disabled>Agendar servicio</button>
+          </div> 
+      </div>
+      
+  </div>
+</div>

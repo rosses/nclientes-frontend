@@ -71,7 +71,7 @@
           &:hover,
           &.active {
             color: #ffffff;
-            background-color: #142748;
+            background-color: #00cb98;
           }
           .icon {
             width: 70px;
@@ -79,7 +79,10 @@
             flex-shrink: 0;
             justify-content: center;
             align-items: center;
-            flex-shrink: 0;
+            flex-shrink: 0; 
+            img {
+              max-width: 30px;
+            }
           }
         }
       }
