@@ -49,12 +49,12 @@ export class MenuSidebarComponent implements OnInit {
       icon: "icon-settings.svg",
       name: "Mis datos",
       url: "setting"
-    },
+    },/*
     {
       icon: "icon-circle-x.svg",
       name: "Cerrar Sesión",
       url: "logout"
-    },
+    },*/
   ];
 
   constructor(private api: ApiService) { }
