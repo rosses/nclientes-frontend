@@ -1,0 +1,20 @@
+@import './custom/theme';
+@import './custom/table-cmp';
+@import './custom/generic';
+@import 'animate.css';
+
+.btn {
+    --bs-btn-disabled-opacity: 0.2 !important;
+    --bs-btn-color: #FFF;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-active-color: #FFF;
+    --bs-btn-disabled-color: #CCC;
+}
+.pac-container {
+    z-index: 10000000 !important;
+}
+@media screen and (max-width: 600px) {
+    .h-100 {
+        height: auto !important;
+    }
+}
