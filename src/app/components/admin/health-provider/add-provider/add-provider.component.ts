@@ -1,7 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { faXmark, faArrowUpFromBracket, faCircleXmark, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { Address } from 'ngx-google-places-autocomplete/objects/address';
-import { RutService } from 'rut-chileno';
 import { ApiService } from 'src/app/api.service';
 import Swal from 'sweetalert2';
 
@@ -46,7 +45,7 @@ export class AddProviderComponent implements OnInit {
     componentRestrictions: { country: 'CL' }
   };
 
-  constructor(public api: ApiService, private rutService: RutService) { }
+  constructor(public api: ApiService) { }
 
   ngOnInit(): void {
   }
@@ -143,7 +142,8 @@ export class AddProviderComponent implements OnInit {
 
   }
   inputEvent(event : Event) {
-    let rut = this.rutService.getRutChileForm(1, (event.target as HTMLInputElement).value)
+    //let rut = this.rutService.getRutChileForm(1, (event.target as HTMLInputElement).value)
+    let rut = (event.target as HTMLInputElement).value;
     this.data.rut = rut;
   }
   closeModal() {
